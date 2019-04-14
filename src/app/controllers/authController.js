@@ -120,7 +120,6 @@ router.post('/reset_password', async (req, res) => {
 
     return res.status(204).end()
   } catch (err) {
-    console.log(err)
     res.status(400).send({ error: 'Cannot reset password' })
   }
 })
